@@ -1,0 +1,38 @@
+swagger: "2.0"
+info:
+  description: This is the swagger file that goes with our model code
+  version: "1.0.0"
+  title: Swagger REST for tweet classification base on include or not include hate speech
+consumes:
+  - "application/json"
+produces:
+  - "application/json"
+
+basePath: "/api"
+
+
+# Paths supported by the server application
+paths:
+  /clf_0: # endpoint
+    post:
+      operationId: "model.classify_tweet"
+      tags:
+        - "classifier_0"
+      summary: "Classifier supported by the server application"
+      description: "Return the label of sentence/tweet"
+      parameters:
+        - name: tweet
+          in: body
+          description: Some tweet
+          required: True
+          schema:
+            type: string
+      responses:
+        200:
+          description: "Successful classification completed"
+          schema:
+            properties:
+              label:
+                type: string
+              confidence:
+                type: string
