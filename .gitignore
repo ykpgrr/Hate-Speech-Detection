@@ -1,0 +1,15 @@
+# SA Frontend ignored files
+node_modules/
+**/Frontend/build/
+
+#  ML ignored files
+venv/
+
+# Backend ignored files
+target/
+.mvn/
+!**/maven-wrapper.jar
+
+# IDE ignored files
+.idea/
+*.iml
