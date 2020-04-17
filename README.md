@@ -4,6 +4,8 @@
 
 ** just for machine learning web service on pure python please go to the [master branch](https://github.com/ykpgrr/Hate-Speech-Detection/tree/master)
 
+***Application demo:***
+![application demo](docs/application_demo.png)
 ## Project Aims
 In this project, worked on a machine learning problem for **hate speech and offensive language detection** for a given texts with aiming to using it with **kubernetes**. <br />
 
