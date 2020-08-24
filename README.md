@@ -5,7 +5,9 @@ Developing an application for hate speech detection<br>
 offensive language detection for tweet texts.<br><br>
 
 :heavy_check_mark: From docker hub: <br/>
-`docker pull ykpgrr/hate_speech_detection_tweet` <br><br>
+- `docker pull ykpgrr/hate_speech_detection_tweet:v1` <br>
+- `docker run -p 5000:5000 ykpgrr/hate_speech_detection_tweet:v1` <br>
+- Go to http://localhost:5000/
 
 :heavy_check_mark: There are also k8s configuration files on [kubernetes branch](https://github.com/ykpgrr/Hate-Speech-Detection/tree/kubernetes)
 
